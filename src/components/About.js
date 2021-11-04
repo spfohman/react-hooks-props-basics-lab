@@ -1,15 +1,15 @@
 import React, { useReducer } from "react";
-import user from "../data/user";
+
+import Links from "./Links";
 function About(props) {
   
   return(
     <div id="about">
       <h2>About Me</h2>
-      <p>{user.bio===""? null:user.bio}</p>
+      {props.bio? <p>{props.bio}</p>:null}
       <img src="https://i.imgur.com/mV8PQxj.gif" alt="I made this" />
-      
-      <a href={user.links.github[0]}>GitHub</a>
-      <a href={user.links.linkedin[1]}>LinkedIn</a>
+      <Links github= {props.links.github} linkedin={props.links.github}/>
+     
     </div>
   );
   
