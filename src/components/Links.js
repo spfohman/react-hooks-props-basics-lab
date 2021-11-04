@@ -7,8 +7,8 @@ function Links(props){
         <>
         <h3>Links</h3>
         
-        <a href={props.links.github}>GitHub</a>
-        <a href={props.links.linkedin}>LinkedIn</a>
+        <a href={props.github}>{props.github}</a>
+        <a href={props.linkedin}>{props.linkedin}</a>
         </>
     )
 }
